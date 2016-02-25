@@ -1,8 +1,4 @@
 - hosts: localhost
   sudo: yes
   roles:
-     - machine
-     - misc
      - php
-     - mysql
-     - httpd
