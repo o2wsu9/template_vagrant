@@ -1,4 +1,8 @@
 - hosts: localhost
   sudo: yes
+  user: vagrant
   roles:
-     - php
+    - machine
+    - httpd
+    - mysql
+    - php

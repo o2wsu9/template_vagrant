@@ -1,3 +1,14 @@
+- name: add repo
+  command: rpm -ih http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm creates=/etc/yum.repos.d/mysql-community.repo
+
+- name: install mysql-community-server
+  yum: name=mysql-community-server state=installed
+
 - name: Install mysql
   sudo: yes
-  yum: name=mysql state=present
+  yum: name={{ item }} state=present
+  with_items:
+    - mysql-devel
+    - MySQL-python
+
+- service: name=mysqld state=restarted
