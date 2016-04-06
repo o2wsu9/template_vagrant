@@ -1,9 +1,10 @@
 # template_vagrant
 
-##
+## Requirement
 
 ```
 $ vagrant -v
+Vagrant 1.8.1
 ```
 
 ## setup
