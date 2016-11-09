@@ -1,11 +1,9 @@
 # template_vagrant
 
-## Requirement
+## Requirements
 
-```
-$ vagrant -v
-Vagrant 1.8.1
-```
+* VirtualBox 5.1
+* Vagrant 1.8.1
 
 ## setup
 ```
